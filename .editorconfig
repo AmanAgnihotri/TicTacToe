@@ -1,0 +1,35 @@
+# Top-most EditorConfig file
+root = true
+
+# Universal settings for all files
+[*]
+charset = utf-8                     # Encoding standard
+end_of_line = lf                    # Line ending character
+max_line_length = 80
+indent_style = space
+insert_final_newline = true         # Ensure file ends with a newline
+trim_trailing_whitespace = true     # Remove any whitespace characters preceding newline characters
+
+# C++ files
+[*.cpp,.h]
+indent_style = space                # C++ uses space for indentation
+indent_size = 2                     # Suggested display-width for tab characters; purely aesthetic, but useful for readability
+tab_width = 2                       # Width of a single tab
+
+# Markdown files (common for README, etc.)
+[*.md]
+trim_trailing_whitespace = false    # In Markdown, trailing whitespace can be significant
+
+# JSON files, often used for configuration
+[*.json]
+indent_style = space
+indent_size = 2
+
+# Makefiles
+[{*[Mm]akefile*,*.mak,*.mk,depend}]
+indent_style = tab                  # Makefile conventions require tabs
+
+[*.{bat, cmd, cmd.*}]
+end_of_line = crlf
+indent_style = space
+indent_size = 2
