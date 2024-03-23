@@ -1,0 +1,77 @@
+# Auto detect text files and perform LF normalization
+* text=auto
+* text eol=lf
+
+*.cpp         text diff=cpp
+*.sh          text
+*.bat         text eol=crlf
+*.plist       text
+
+# Web
+*.css         text
+*.htm         text diff=html
+*.html        text diff=html
+*.js          text
+*.json        text
+*.xml         text
+*.xhtml       text diff=html
+
+# Documentation
+*.md          text
+*.txt         text
+AUTHORS       text
+CHANGELOG     text
+CHANGES       text
+CONTRIBUTING  text
+COPYING       text
+COPYRIGHT     text
+*COPYRIGHT*   text
+INSTALL       text
+LICENSE       text
+NEWS          text
+README        text
+*README*      text
+TODO          text
+
+# Configs
+.gitattributes  text
+.gitconfig      text
+.gitignore      text
+
+# Graphics
+*.png   binary
+*.jpg   binary
+*.jpeg  binary
+*.gif   binary
+*.ico   binary
+*.icns  binary
+*.tif   binary
+*.tiff  binary
+*.ico   binary
+*.svg   binary
+*.bin   binary
+*.ccz   binary
+*.c3b   binary
+*.c3t   binary
+*.csb   binary
+*.csd   binary
+
+# Audio/Video
+*.mp3   binary
+*.ogg   binary
+*.wav   binary
+*.mp4   binary
+*.pvr   binary
+*.pkm   binary
+*.webp  binary
+
+# Fonts
+*.fnt   binary
+*.ttf   binary
+*.eot   binary
+*.otf   binary
+*.woff  binary
+*.woff2 binary
+
+# Others
+*.zip   binary
